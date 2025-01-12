@@ -1,3 +1,22 @@
+## https://laradock.io/docs/getting-started/#A
+## https://www.youtube.com/watch?v=jRg_U7zNaZA&ab_channel=DATOGEDON
+
+## PMA_DB_ENGINE=mariadb ó mysql
+## http://localhost:8081 mariadb root root
+## en laradock/mysql/my.cnf añadir:
+    # mysql_native_password=on
+    # docker compose build mysql
+## Si elegimos mariadb en el .env de laravel
+    # DB_CONNECTION=mysql
+    # DB_HOST=mariadb
+## Creamos frankar.conf dentro de /nginx/sites
+   # server_name crud_backend.test;
+   # root /var/www/crud_backend/public;
+## elegir dominio para test, de esta forma no tendremos más que poner el nombre del dominio:
+    # sudo vim /etc/hosts
+    # Añadimos 127.0.0.1    crud_backend.test
+## artisan migrate para crear las tablas precisas
+
 <p align="center">
     <img src="/.github/home-page-images/laradock-logo.jpg?raw=true" alt="Laradock Logo"/>
 </p>
